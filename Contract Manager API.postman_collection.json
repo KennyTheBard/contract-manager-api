@@ -1,0 +1,157 @@
+{
+	"info": {
+		"_postman_id": "bcc5ef91-ea0d-4df6-8178-8a1f0b62d2f2",
+		"name": "Contract Manager API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/dev/createContract",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImQ4YjBiNjU3LTNlMTUtNDBlYS1iYTNkLTVkMzZiNGQ3NzhhNSIsInVzZXJuYW1lIjoidGVzdDE0IiwiaWF0IjoxNjc4NTQ3MTAzfQ.G2Y0cDVXh_iGfMuypzp5__JSJjK9_FaRzEDl5Cq61ls",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userId\": \"uuid\",\n    \"contractName\": \"Another String\",\n    \"templateId\": \"uuid\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/dev/createContract",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"dev",
+						"createContract"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/dev/getContract?id=3000e6bb-2558-469c-8549-502ea7e3f43e",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/dev/getContract?id=3000e6bb-2558-469c-8549-502ea7e3f43e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"dev",
+						"getContract"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3000e6bb-2558-469c-8549-502ea7e3f43e"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/dev/getContractIds",
+			"request": {
+				"auth": {
+					"type": "apikey"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjRmMzVlZGNlLWQ3NGYtNDcxNC04MzQ1LWEyMGUwMDA5ZjI4ZiIsInVzZXJuYW1lIjoidGVzdDEiLCJpYXQiOjE2Nzg1NDQyNDV9.VlWVHeYVZUoX5oiHeYfoBnBqNlA07HE4ms7_Z5bKnjQ",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/dev/getContractIds",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"dev",
+						"getContractIds"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/dev/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"test14\",\n    \"password\": \"secret\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/dev/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"dev",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/dev/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"test\",\n    \"password\": \"test\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/dev/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"dev",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

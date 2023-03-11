@@ -41,3 +41,7 @@ Start the serverless offline:
 ```bash
 sls offline start
 ```
+
+## Testing
+
+There is a Postman collection exported into this directory, it can be used for testing.
